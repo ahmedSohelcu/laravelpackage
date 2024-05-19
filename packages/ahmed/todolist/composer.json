@@ -1,0 +1,26 @@
+{
+    "name": "ahmed/todolist",
+    "description": "A simple to-do list package for Laravel.",
+    "type": "todolist",
+    "autoload": {
+        "psr-4": {
+            "Ahmed\\Todolist\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ahmedSohelcu",
+            "email": "ahmedsohelcu@gmail.com"
+        }
+    ],
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ahmed\\Todolist\\Providers\\TodoPackageServiceProvider"                        
+            ]
+        }
+    },
+	"minimum-stability": "dev",
+    "require": {}
+}
