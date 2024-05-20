@@ -2,44 +2,42 @@
 
 
 
-## About Laravel
+## About 
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
 - Database agnostic [schema migrations](https://laravel.com/docs/migrations).
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-### Premium Partners
+### Packages List
 
-- **[Vehikl](https://vehikl.com/)**
+- **[Laravel Todo Package](https://vehikl.com/)**
 - *[Tighten Co.](https://tighten.co)*
 
 ## Contributing
 Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-## License
+## About Package
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This package is developed based on laravel 11 and php 8.2.The package is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Entry Point
+
+```Our pacage's entry point is src/providers/TodoPackageServiceProvider```
 
 
-
-
-01. Our pacage's entry point is src/providers/TodoPackageServiceProvider
-
-
-How to Use
+## How to Use
 ================
-1. ```add / register TodoPackageServiceProvider in the bootstrap/providers.php of the main project```
+1. ```Register TodoPackageServiceProvider in the bootstrap/providers.php of the main project```
 
-2. run migration command to migrate todos table
-
+2. Run ```php artisan migrate``` to migrate todos table
 
 
 <!--  -->
-``Load view``
+### Load view
 <!-- load route from main package -->
 ```$this->loadViewsFrom(__DIR__.'/../Resources/views', 'todopackage');```
 
-Here we have loaded all views as todopackage. so think we have a file 
+Here we have loaded all views as ```todopackage```. so think we have a file 
 into our package in Resources/views/todos/index.blade.php. we can access this file from our main project using
     ```return view('todopackage::todos.index');```
 
