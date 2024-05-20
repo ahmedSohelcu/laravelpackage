@@ -3,18 +3,14 @@
 
 
 ## About 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Laravel 11 project](https://laravel.com/docs/routing).
+- To do package [migrations](https://laravel.com/docs/migrations).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
 ### Packages List
 
 - **[Laravel Todo Package](https://vehikl.com/)**
 - *[Tighten Co.](https://tighten.co)*
-
-## Contributing
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
 ## About Package
 
@@ -49,3 +45,7 @@ into our package in Resources/views/todos/index.blade.php. we can access this fi
 
 <!-- Rout to Test -->
 ```http://127.0.0.1:8000/todos```
+
+
+### Readme md syntax
+
