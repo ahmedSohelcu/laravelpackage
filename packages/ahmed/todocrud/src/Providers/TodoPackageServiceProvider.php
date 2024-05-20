@@ -14,10 +14,13 @@ class TodoPackageServiceProvider extends ServiceProvider
     //     //
     // }
 
+	
+
+
 	public function register()
     {
         // Merge package configuration
-        $this->mergeConfigFrom(__DIR__.'/../config/todocrud.php', 'todopackage');
+        // $this->mergeConfigFrom(__DIR__.'/../config/todocrud.php', 'todocrud');
     }
 
     /**
@@ -28,30 +31,47 @@ class TodoPackageServiceProvider extends ServiceProvider
 	 	// Load routes, views, etc. for web requests
 		// $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'todolist');
 		//register routes
-		$this->loadRoutesFrom(__DIR__.'/../Routes/web.php');
+		$this->loadRoutesFrom(__DIR__.'/../routes/web.php');
 		//register routes
-		$this->loadRoutesFrom(__DIR__.'/../Routes/api.php');
+		$this->loadRoutesFrom(__DIR__.'/../routes/api.php');
 		
 		//load views
-		$this->loadViewsFrom(__DIR__.'/../Resources/views', 'todopackage');
+		$this->loadViewsFrom(__DIR__.'/../resources/views', 'todocrud');
 			
 		//load migration
 		$this->loadMigrationsFrom(__DIR__.'/../database/migrations');
 
 
         
+		// to publish vendor 
+		
+
 		// Register console commands only when running in console
-		if ($this->app->runningInConsole()) {		
+		if ($this->app->runningInConsole()) {						
 
-			// Publish configuration file
-            $this->publishes([
-                __DIR__.'/../config/todopackage.php' => config_path('todopackage.php'),
-            ], 'config');
-
-			// Publishing the views.		
+			// php artisan vendor:publish --tag=config			
 			$this->publishes([
-                __DIR__.'/../Resources/views' => resource_path('views/vendor/todopackage'),
+				__DIR__.'/../config/todocrud.php' => config_path('todocrud.php')
+			], 'config');
+			
+			// Publishing the views.		
+			// php artisan vendor:publish --tag=views
+			$this->publishes([
+                __DIR__.'/../resources/views' => resource_path('views/todocrud'),
             ], 'views');
+
+			/**///
+
+
+			// $this->publishes([
+			// 	__DIR__.'/../public' => public_path('todocrud'),
+			// ], 'public');
+
+
+			// // Publishing the views
+			// $this->publishes([
+			// 	__DIR__.'/../resources/views' => resource_path('views/vendor/packagename'),
+			// ], 'views');
 
 			//or
 			// $this->publishes([

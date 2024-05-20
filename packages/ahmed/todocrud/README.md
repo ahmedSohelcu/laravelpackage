@@ -8,6 +8,12 @@ How to Use
 2. run migration command to migrate todos table
 
 
+3. ## Publish the config
+    php artisan vendor:publish --tag=config
+
+
+4. ## Publish the views
+    php artisan vendor:publish --tag=views
 
 <!--  -->
 ``Load view``
