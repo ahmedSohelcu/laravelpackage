@@ -13,7 +13,8 @@
 12. abstract class Facade
 13.__invoke
 14.app
-
+15.facade
+16. service provider
 
 
  Log::info('Pruning Stale Connections');

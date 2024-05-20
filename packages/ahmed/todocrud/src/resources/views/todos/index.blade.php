@@ -1,9 +1,9 @@
 
-@extends('todopackage::layouts.app')
+@extends('todocrud::layouts.app')
 @section('content')        
 
 <div class="container mt-5">
-    <h1 class="mb-4">Todo List</h1>
+    <h1 class="mb-4">Todo List from package</h1>
     <table class="table table-striped table-bordered">
         <thead>
             <tr>
