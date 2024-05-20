@@ -35,16 +35,20 @@ This package is developed based on laravel 11 and php 8.2.The package is open-so
 
 Here we have loaded all views as ```todopackage```. so think we have a file 
 into our package in Resources/views/todos/index.blade.php. we can access this file from our main project using
-    ```return view('todopackage::todos.index');```
-
+    
+    ``` 
+        return view('todopackage::todos.index'); 
     ```
+
+   ```
     Resources/views/todos/test/index.blade.php by 
     return view('todopackage::todos.test.index');
-     ``
+   ```
 
 
 <!-- Rout to Test -->
-```http://127.0.0.1:8000/todos```
+``` http://127.0.0.1:8000/todos
+```
 
 
 ### Readme md syntax
