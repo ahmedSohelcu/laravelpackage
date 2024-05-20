@@ -1,5 +1,5 @@
 {
-    "name": "ahmed/todolist",
+    "name": "ahmed/todocrud",
     "description": "A simple to-do list package for Laravel.",
     "type": "todolist",
     "autoload": {
@@ -17,7 +17,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Ahmed\\Todolist\\Providers\\TodoPackageServiceProvider"                        
+                "Ahmed\\Todocrud\\Providers\\TodoPackageServiceProvider"                        
             ]
         }
     },

@@ -1,6 +1,6 @@
 <?php
 
-namespace Ahmed\Todolist\Models;
+namespace Ahmed\Todocrud\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

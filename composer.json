@@ -6,6 +6,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
+        "flobbos/laravel-crudable": "^3.0",
         "laravel/framework": "^11.0",
         "laravel/tinker": "^2.9"
     },
@@ -28,7 +29,7 @@
     "autoload-dev": {
         "psr-4": {
             "Tests\\": "tests/",
-            "Ahmed\\Todolist\\": "packages/ahmed/todolist/src/"
+            "Ahmed\\Todocrud\\": "packages/ahmed/todocrud/src/"
         }
     },
     "scripts": {

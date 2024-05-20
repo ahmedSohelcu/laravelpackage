@@ -23,6 +23,14 @@ into our package in Resources/views/todos/index.blade.php. we can access this fi
     return view('todopackage::todos.test.index');
      ``
 
+## Rout to Test 
+```http://127.0.0.1:8000/todo-list```
+- [Laravel 11 project](https://laravel.com/docs/routing).
+- To do package [migrations](https://laravel.com/docs/migrations).
 
-<!-- Rout to Test -->
-```http://127.0.0.1:8000/todos```
+
+
+### To install
+```composer require ahmed/todocrud```
+
+

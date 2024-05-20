@@ -1,6 +1,6 @@
 <?php
 
-namespace Ahmed\Todolist\Providers;
+namespace Ahmed\Todocrud\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -17,7 +17,7 @@ class TodoPackageServiceProvider extends ServiceProvider
 	public function register()
     {
         // Merge package configuration
-        $this->mergeConfigFrom(__DIR__.'/../config/todopackage.php', 'todopackage');
+        $this->mergeConfigFrom(__DIR__.'/../config/todocrud.php', 'todopackage');
     }
 
     /**

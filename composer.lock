@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "da9b7a1dc1dd923105198c572cc7df8d",
+    "content-hash": "e7c247ffd4ef9092e83af2c7778c2952",
     "packages": [
         {
             "name": "brick/math",
@@ -505,6 +505,54 @@
                 }
             ],
             "time": "2023-10-06T06:47:41+00:00"
+        },
+        {
+            "name": "flobbos/laravel-crudable",
+            "version": "3.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Flobbos/laravel-crudable.git",
+                "reference": "5f87b0ed0894fb70a1455cf361f0fc80e1a196aa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Flobbos/laravel-crudable/zipball/5f87b0ed0894fb70a1455cf361f0fc80e1a196aa",
+                "reference": "5f87b0ed0894fb70a1455cf361f0fc80e1a196aa",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": ">=5.1.0",
+                "php": ">=5.6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Flobbos\\Crudable\\": "src/Crudable/"
+                },
+                "classmap": []
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexej Krzewitzki",
+                    "email": "alexej@helloo.it",
+                    "homepage": "http://helloo.it"
+                }
+            ],
+            "description": "A Laravel package for saving time on crud operations",
+            "keywords": [
+                "crud",
+                "database",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/Flobbos/laravel-crudable/issues",
+                "source": "https://github.com/Flobbos/laravel-crudable/tree/master"
+            },
+            "time": "2018-12-11T15:49:29+00:00"
         },
         {
             "name": "fruitcake/php-cors",

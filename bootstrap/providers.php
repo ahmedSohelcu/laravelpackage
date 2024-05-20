@@ -1,6 +1,6 @@
 <?php
 
-use Ahmed\Todolist\Providers\TodoPackageServiceProvider;
+use Ahmed\Todocrud\Providers\TodoPackageServiceProvider;
 
 return [
     App\Providers\AppServiceProvider::class,
