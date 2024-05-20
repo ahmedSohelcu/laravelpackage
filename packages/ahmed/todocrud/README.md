@@ -7,6 +7,8 @@ How to Use
 
 2. run migration command to migrate todos table
 
+### Publish views to modify
+    after publishing views your can modify content from ```resource/views/todocrud folder of your project```
 
 3. ## Publish the config
     php artisan vendor:publish --tag=config
