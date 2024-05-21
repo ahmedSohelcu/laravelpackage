@@ -1,6 +1,6 @@
 {
-    "name": "ahmedsohel/todocrud",
-    "version": "0.0.2",
+    "name": "ahmedsohel/laravel-todocrud",
+    "version": "0.0.3",
     "description": "A simple to-do list package for Laravel.",
     "type": "todolist",
     "autoload": {
