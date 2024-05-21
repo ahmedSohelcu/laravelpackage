@@ -1,6 +1,6 @@
 <?php
 
-namespace Ahmed\Todocrud\Providers;
+namespace Ahmed\Todocrud;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -21,7 +21,26 @@ class TodoPackageServiceProvider extends ServiceProvider
     {
         // Merge package configuration
         // $this->mergeConfigFrom(__DIR__.'/../config/todocrud.php', 'todocrud');
+
+		// dd($this->app);
     }
+
+
+		// 	public function register()
+	// 	{
+	// 		$this->app->make('Prakash\Todolist\Controllers\TodolistController');
+	// 		// Automatically apply the package configuration
+	// 		$this->mergeConfigFrom(__DIR__.'/../../config/config.php', 'todolist');
+
+	// 		// Register the main class to use with the facade
+	// 		$this->app->singleton('task', function () {
+	// 			return new Task;
+	// 		});
+	// 		// $this->app->bind('task', function () {
+	// 		//     return new Task();
+	// 		// });
+	// 	}
+	// } 
 
     /**
      * Bootstrap services.
@@ -31,15 +50,15 @@ class TodoPackageServiceProvider extends ServiceProvider
 	 	// Load routes, views, etc. for web requests
 		// $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'todolist');
 		//register routes
-		$this->loadRoutesFrom(__DIR__.'/../routes/web.php');
+		$this->loadRoutesFrom(__DIR__.'/routes/web.php');
 		//register routes
-		$this->loadRoutesFrom(__DIR__.'/../routes/api.php');
+		$this->loadRoutesFrom(__DIR__.'/routes/api.php');
 		
 		//load views
-		$this->loadViewsFrom(__DIR__.'/../resources/views', 'todocrud');
+		$this->loadViewsFrom(__DIR__.'/resources/views', 'todocrud');
 			
 		//load migration
-		$this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+		$this->loadMigrationsFrom(__DIR__.'/database/migrations');
 
 
         
@@ -51,13 +70,13 @@ class TodoPackageServiceProvider extends ServiceProvider
 
 			// php artisan vendor:publish --tag=config			
 			$this->publishes([
-				__DIR__.'/../config/todocrud.php' => config_path('todocrud.php')
+				__DIR__.'/config/todocrud.php' => config_path('todocrud.php')
 			], 'config');
 			
 			// Publishing the views.		
 			// php artisan vendor:publish --tag=views
 			$this->publishes([
-                __DIR__.'/../resources/views' => resource_path('views/todocrud'),
+                __DIR__.'/resources/views' => resource_path('views/todocrud'),
             ], 'views');
 
 			/**///

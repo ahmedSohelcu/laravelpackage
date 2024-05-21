@@ -17,6 +17,27 @@
 16. service provider
 
 
+### 7 key design patterns used by laravel 
+
+Model-View-Controller (MVC)
+Dependency Injection (DI)
+Service Container
+Facade
+Repository Pattern
+Singleton Pattern
+Factory Pattern
+
+### more patterns that Laravel uses
+
+Observer Pattern
+Strategy Pattern
+Builder Pattern
+Adapter Pattern
+Proxy Pattern
+Chain of Responsibility
+
+
+
  Log::info('Pruning Stale Connections');
 
  protected function generateId(): string

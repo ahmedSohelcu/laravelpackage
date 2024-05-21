@@ -1,8 +1,8 @@
 <?php
 
-use Ahmed\Todocrud\Providers\TodoPackageServiceProvider;
+use Ahmed\Todocrud\TodoPackageServiceProvider;
 
 return [
     App\Providers\AppServiceProvider::class,
-    TodoPackageServiceProvider::class
+    TodoPackageServiceProvider::class,
 ];

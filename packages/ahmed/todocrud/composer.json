@@ -1,10 +1,11 @@
 {
-    "name": "ahmed/todocrud",
+    "name": "ahmedsohel/todocrud",
+    "version": "0.0.2",
     "description": "A simple to-do list package for Laravel.",
     "type": "todolist",
     "autoload": {
         "psr-4": {
-            "Ahmed\\Todolist\\": "src/"
+            "Ahmed\\Todocrud\\": "src/"
         }
     },
     "authors": [
@@ -17,7 +18,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Ahmed\\Todocrud\\Providers\\TodoPackageServiceProvider"                        
+                "Ahmed\\Todocrud\\TodoPackageServiceProvider"            
             ]
         }
     },
