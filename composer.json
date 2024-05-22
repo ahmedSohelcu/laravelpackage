@@ -6,7 +6,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
-        "ahmedsohel/laravel-todocrud": "^0.0.3",
+        "ahmedsohel/laravel-todocrud": "^1.0",
         "laravel/framework": "^11.0",
         "laravel/tinker": "^2.9"
     },

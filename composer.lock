@@ -4,23 +4,27 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3b6d86991d3b405269007584827efe39",
+    "content-hash": "45d33c93bb72d4390bab4a1e1df93622",
     "packages": [
         {
             "name": "ahmedsohel/laravel-todocrud",
-            "version": "0.0.3",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ahmedSohelcu/laravel-todocrud.git",
-                "reference": "a0be870bc5f3f7a86e73a4c8bedecef073dd3019"
+                "reference": "b0c23fdfecba9e9981fef369e4a3c77d0511d48f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ahmedSohelcu/laravel-todocrud/zipball/a0be870bc5f3f7a86e73a4c8bedecef073dd3019",
-                "reference": "a0be870bc5f3f7a86e73a4c8bedecef073dd3019",
+                "url": "https://api.github.com/repos/ahmedSohelcu/laravel-todocrud/zipball/b0c23fdfecba9e9981fef369e4a3c77d0511d48f",
+                "reference": "b0c23fdfecba9e9981fef369e4a3c77d0511d48f",
                 "shasum": ""
             },
-            "type": "todolist",
+            "require": {
+                "laravel/framework": "^11.0",
+                "php": "^8.2"
+            },
+            "type": "todocrud",
             "extra": {
                 "laravel": {
                     "providers": [
@@ -34,6 +38,9 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "ahmedSohelcu",
@@ -41,11 +48,15 @@
                 }
             ],
             "description": "A simple to-do list package for Laravel.",
+            "keywords": [
+                "laravel",
+                "todocrud"
+            ],
             "support": {
                 "issues": "https://github.com/ahmedSohelcu/laravel-todocrud/issues",
-                "source": "https://github.com/ahmedSohelcu/laravel-todocrud/tree/v0.0.3"
+                "source": "https://github.com/ahmedSohelcu/laravel-todocrud/tree/v1.0.0"
             },
-            "time": "2024-05-21T06:16:46+00:00"
+            "time": "2024-05-21T07:52:38+00:00"
         },
         {
             "name": "brick/math",
